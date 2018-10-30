@@ -1,0 +1,14 @@
+<div class="alert alert-danger" *ngIf="!isLoggedIn">
+  Hey! sorry. You are not allowed to access. Pls login.
+</div>
+
+<div class="alert alert-success" *ngIf="isLoggedIn">
+  Wow! You have access to our whole premium features
+</div>
+
+
+<ul>
+  <li *ngFor="let skill of skillsetList;">
+    {{ skill }}
+  </li>
+</ul>
