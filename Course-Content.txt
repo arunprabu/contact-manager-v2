@@ -1,0 +1,66 @@
+[x] Angular 4 Setup
+  [x] Angular Cli (npm i -g @angular/cli)
+  [x] Create a project --> ng new myApp
+  [x] Start the server --> ng serve
+[x] Getting started with Components
+  [x] What is a Component?
+  [x] Breaking down into Component
+  [x] Project Structure
+  [x] Understanding app code
+  [x] How does Angular App Start?
+  [x] Understanding AppModule (app.module.ts)
+[x] Deep Dive into Components
+  [x] Generate Component (ng generate component header)
+  [x] Inner or Multiple Components (ng generate component sidebar)
+  [x] Generate inline templates (ng g c footer --flat --inline-style --inline-template) 
+  [x] Shorthand cmd (ng g c footer --flat --is -it) 
+      --flat -> for folder less component -is -> for --inline-style -it -> for --inline-template
+  [x] ng-content
+[x] Data Binding
+  [x] Intro
+  [x] String Interpolation
+  [x] Property Binding
+  [x] Custom Property Binding
+  [x] Event Binding
+  [x] Two-way data Binding
+  [] Template Reference Variables 
+      <input #myName type="text"> <button (click)="setName(myName.value)">Set Name Pls</button>
+[x] Directives
+  [x] What are they? Directives are Instructions for the DOM.
+  []x 1. Attribute Directives 
+    [x] Examples: ngClass, ngSubmit, ngStyle 
+  [x] 2. Structural Directives 
+    [x] Examples: ngIf, ngIf/else with ng-template, ngFor, ngSwitch 
+
+  [] Custom Attribute Directive (Colorizer)
+  [] Custom Attribute Directive with event (EvtListener)
+[x] Debugging
+  [x] Chrome Inspector 
+    -- Source Tab locate webpack/projectfolder/ and open .ts for Sourcemaps
+  [x] Augury
+[x] Angular Router
+  [x] Intro to Router
+  [x] Setting up Router
+  [x] Associating Links
+  [x] Nested/ Child Routes
+[] Forms
+  [] Template Driven Approach  (HTML )
+  [] Data Driven Approach    (TS)
+[] Services
+  [] What are Services? 
+      Services are JavaScript functions that are responsible for doing a specific task. Services are injected using Dependency Injection.
+  [] Dependency Injection 
+      Dependency Injection is a design pattern that passes object as dependencies in different components across the application. Examples: renderer, elementRef
+[] Pipes
+  [] What are Pipes?
+  [] Pipes Docs
+  [] ng g p myPipe
+[] HTTP Requests
+    GET, POST, PUT, DELETE
+[] Interfaces
+    generating i/f thru CLI and implementing it
+[] Observables
+  [] RxJs and Observables
+[] Deploying Angular App
+[] Angular Unit Testing
+
