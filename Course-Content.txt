@@ -43,24 +43,24 @@
   [x] Setting up Router
   [x] Associating Links
   [x] Nested/ Child Routes
-[] Forms
-  [] Template Driven Approach  (HTML )
+[x] Forms
+  [x] Template Driven Approach  (HTML )
   [] Data Driven Approach    (TS)
-[] Services
-  [] What are Services? 
+[x] Services
+  [x] What are Services? 
       Services are JavaScript functions that are responsible for doing a specific task. Services are injected using Dependency Injection.
-  [] Dependency Injection 
+  [x] Dependency Injection 
       Dependency Injection is a design pattern that passes object as dependencies in different components across the application. Examples: renderer, elementRef
+[x] HTTP Requests
+    GET, POST, PUT, DELETE
+[] Observables
+  [] RxJs and Observables
 [] Pipes
   [] What are Pipes?
   [] Pipes Docs
-  [] ng g p myPipe
-[] HTTP Requests
-    GET, POST, PUT, DELETE
+  [] Custom Pipes ng g p myPipe
 [] Interfaces
     generating i/f thru CLI and implementing it
-[] Observables
-  [] RxJs and Observables
 [] Deploying Angular App
 [] Angular Unit Testing
 
