@@ -22,6 +22,7 @@ import { AddContactComponent } from './components/contacts/add-contact/add-conta
 import { ContactDetailsComponent } from './components/contacts/contact-details/contact-details.component';
 import { AboutComponent } from './components/about/about.component';
 
+//Decorator
 @NgModule({
   declarations: [
     AppComponent,

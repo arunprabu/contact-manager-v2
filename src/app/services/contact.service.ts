@@ -12,10 +12,10 @@ export class ContactService {
   //ts
   constructor( private http: Http) { }
   
-  
 
 
-  create( contactData  ){  // 1. receive the form data from add contact form 
+ // Create Contact   
+  create( contactData: Object  ) : any {  // 1. receive the form data from add contact form 
     console.log(contactData);
     // 2. send the data to rest api 
     return this.http.post('https://jsonplaceholder.typicode.com/users', contactData)
@@ -27,6 +27,18 @@ export class ContactService {
               );
 
   }
+
+  //getContacts
+  getContacts(){
+    //1. send the req to get all contacts
+    return this.http.get('https://jsonplaceholder.typicode.com/users')
+              .pipe(map( (response) => {  // 2. receive the resp from rest api 
+                console.log(response);
+                // 3. send it back to component 
+                return response.json();
+              })
+            );
+  } 
 
 
 
