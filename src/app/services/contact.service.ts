@@ -40,6 +40,26 @@ export class ContactService {
             );
   } 
 
+  //get contact details by id 
+  getContactById(id){
+    return this.http.get('https://jsonplaceholder.typicode.com/users/'+ id)
+            .pipe(map( (response) => {  // 2. receive the resp from rest api 
+              console.log(response);
+              // 3. send it back to component 
+              return response.json();
+            })
+          );
+  }
 
 
+  updateContact(editableData){
+    //1. get editable data from comp.ts and send it to api
+    return this.http.put('https://jsonplaceholder.typicode.com/users/'+ editableData.id, editableData)
+            .pipe(map( (response) => {  // 2. receive the resp from rest api 
+              console.log(response);
+              // 3. send it back to component 
+              return response.json();
+            })
+          );
+  }
 }

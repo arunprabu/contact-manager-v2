@@ -52,9 +52,12 @@
   [x] Dependency Injection 
       Dependency Injection is a design pattern that passes object as dependencies in different components across the application. Examples: renderer, elementRef
 [x] HTTP Requests
-    GET, POST, PUT, DELETE
-[] Observables
-  [] RxJs and Observables
+    [x]GET, 
+    [x]POST, 
+    [] PUT, 
+    [] DELETE
+[x] Observables
+  [x] RxJs and Observables
 [] Pipes
   [] What are Pipes?
   [] Pipes Docs
