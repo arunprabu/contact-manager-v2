@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { Router } from "@angular/router";
 
 import { ContactService } from 'src/app/services/contact.service';
+import { Contact } from 'src/app/models/contact';
 
 @Component({
   selector: 'app-add-contact',
@@ -11,11 +12,7 @@ import { ContactService } from 'src/app/services/contact.service';
 })
 export class AddContactComponent implements OnInit {
 
-  contactData: Object = {
-    username: 'a',
-    phone: '12345',
-    email: 'a@b.com'
-  };
+  contactData: Contact;   //custom data type -- via interface
   
   status: string;
 

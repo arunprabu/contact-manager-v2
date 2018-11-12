@@ -14,6 +14,11 @@ export class ConceptsComponent implements AfterViewInit {
 
   visitedDate: any;
 
+  birthday = new Date(1988, 3, 15); // April 15, 1988; - used in pipes tab
+  lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo, vero alias, voluptatum asperiores commodi hic minima odio voluptates cumque incidunt molestiae perferendis voluptate consequatur officiis dolores quod, voluptas quas.';
+
+
+
   constructor() { }
 
   ngAfterViewInit() {

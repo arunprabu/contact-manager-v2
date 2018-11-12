@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactService } from 'src/app/services/contact.service';
+import { Contact } from 'src/app/models/contact';
 
 @Component({
   selector: 'app-contacts',
@@ -8,7 +9,8 @@ import { ContactService } from 'src/app/services/contact.service';
 })
 export class ContactsComponent implements OnInit {
 
-  contactList: any[];
+  contactList: Contact[];
+  //contactList: Array<Contact>;  // another syntax 
 
   constructor( private contactService: ContactService) {
     console.log("Inside Constructor");

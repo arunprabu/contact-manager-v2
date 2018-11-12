@@ -13,15 +13,18 @@ export class SiComponent implements OnInit {
   isLoggedIn: boolean = false; // boolean 
 
   //object
-  myProfile: Object = {
-    name: "Arun",
-    city: "Chennai"
-  }
+  myProfile: IProfile;
   
   //array 
   skillset: string[] = [ 'ng', 'react', 'nodejs', 'mean', 'mern'];
 
-  constructor() { }
+  constructor() {
+    this.myProfile = {
+      name: "Arun",
+      city: "CHN"
+    };
+
+  }
 
   ngOnInit() {
   }
@@ -30,4 +33,9 @@ export class SiComponent implements OnInit {
   getExperience() : string {
     return "13 years";
   }
+}
+
+export interface IProfile {
+  name: string
+  city: string
 }

@@ -1,6 +1,7 @@
 <div class="container">
   <h2><a routerLink="/contacts" class="text-right">
-      << Go back</a>Contact Details of John </h2> <div class="card col-md-12">
+      << Go back</a>Contact Details of John </h2> 
+      <div class="card col-md-12" *ngIf="contactData">
         <div class="card-body">
           <h5 class="card-title">{{ contactData.username }} </h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -12,7 +13,7 @@
 
           <!-- Modal -->
           <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
-            aria-hidden="true">
+            aria-hidden="true" *ngIf="editableContactData">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">

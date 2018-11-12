@@ -12,8 +12,6 @@ export class ContactService {
   //ts
   constructor( private http: Http) { }
   
-
-
  // Create Contact   
   create( contactData: Object  ) : any {  // 1. receive the form data from add contact form 
     console.log(contactData);
@@ -62,4 +60,6 @@ export class ContactService {
             })
           );
   }
+
+  //delete contact
 }

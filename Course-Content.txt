@@ -54,16 +54,18 @@
 [x] HTTP Requests
     [x]GET, 
     [x]POST, 
-    [] PUT, 
+    [x] PUT, 
     [] DELETE
 [x] Observables
   [x] RxJs and Observables
-[] Pipes
-  [] What are Pipes?
-  [] Pipes Docs
-  [] Custom Pipes ng g p myPipe
-[] Interfaces
+[x] Pipes
+  [x] What are Pipes?
+  [x] Pipes Docs
+  [x] Custom Pipes ng g p myPipe
+[x] Interfaces
     generating i/f thru CLI and implementing it
+[x] Guards
 [] Deploying Angular App
 [] Angular Unit Testing
+  [] Jasmine
 

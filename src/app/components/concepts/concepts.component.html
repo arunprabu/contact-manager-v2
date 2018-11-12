@@ -31,6 +31,11 @@
       <a class="nav-link" id="sd-tab" data-toggle="tab" href="#sd" role="tab"
         aria-selected="false">Structural Directives</a>
     </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="pipes-tab" data-toggle="tab" href="#pipes" role="tab"
+        aria-selected="false">Pipes</a>
+    </li>
   </ul>
   <div class="tab-content" id="myTabContent">
 
@@ -64,6 +69,15 @@
 
     <div class="tab-pane fade" id="sd" role="tabpanel">
       <app-structural-directives></app-structural-directives>
+    </div>
+
+    <div class="tab-pane fade" id="pipes" role="tabpanel">
+      <h2>Pipes </h2>
+
+      <p>The birthday is: {{birthday | date: 'MMMM dd, yyyy'}}</p>
+
+      <h2>My Custom Pipe</h2>
+      <p>{{ lorem | ellipsis: '120'}}</p>
     </div>
   </div>
 </div>

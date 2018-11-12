@@ -21,6 +21,7 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { AddContactComponent } from './components/contacts/add-contact/add-contact.component';
 import { ContactDetailsComponent } from './components/contacts/contact-details/contact-details.component';
 import { AboutComponent } from './components/about/about.component';
+import { EllipsisPipe } from './pipes/ellipsis.pipe';
 
 //Decorator
 @NgModule({
@@ -41,7 +42,8 @@ import { AboutComponent } from './components/about/about.component';
     ContactsComponent,
     AddContactComponent,
     ContactDetailsComponent,
-    AboutComponent
+    AboutComponent,
+    EllipsisPipe
   ],
   imports: [
     BrowserModule,

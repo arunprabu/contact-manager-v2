@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { ContactService } from 'src/app/services/contact.service';
+import { Contact } from 'src/app/models/contact';
 
 declare var $: any;   //use jquery with in this component
 
@@ -11,8 +12,8 @@ declare var $: any;   //use jquery with in this component
   styles: []
 })
 export class ContactDetailsComponent implements OnInit {
-  contactData: Object = {};
-  editableContactData: Object = {};
+  contactData: Contact;
+  editableContactData: Contact;
   contactId: number;
   isSaved: boolean;
 
@@ -57,5 +58,7 @@ export class ContactDetailsComponent implements OnInit {
                       });
 
   }
+
+  
   
 }
