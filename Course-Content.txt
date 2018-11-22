@@ -22,6 +22,7 @@
   [x] Property Binding
   [x] Custom Property Binding
   [x] Event Binding
+  [x] Custom Event Binding
   [x] Two-way data Binding
   [] Template Reference Variables 
       <input #myName type="text"> <button (click)="setName(myName.value)">Set Name Pls</button>
@@ -31,9 +32,8 @@
     [x] Examples: ngClass, ngSubmit, ngStyle 
   [x] 2. Structural Directives 
     [x] Examples: ngIf, ngIf/else with ng-template, ngFor, ngSwitch 
-
-  [] Custom Attribute Directive (Colorizer)
-  [] Custom Attribute Directive with event (EvtListener)
+  [] Custom Attribute Directive (Colorizer)   ng g d directives/colorizer
+  [] Custom Attribute Directive with event (EvtListener)   
 [x] Debugging
   [x] Chrome Inspector 
     -- Source Tab locate webpack/projectfolder/ and open .ts for Sourcemaps
@@ -65,7 +65,8 @@
 [x] Interfaces
     generating i/f thru CLI and implementing it
 [x] Guards
-[] Deploying Angular App
+[x] Deploying Angular App
+[x] Using third party modules/directives in Angular app
 [] Angular Unit Testing
   [] Jasmine
 
